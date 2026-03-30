@@ -1,5 +1,5 @@
 import 'package:bloc_testapp/cubit/counter_cubit.dart';
-import 'package:bloc_testapp/cubit/counter_state.dart';
+import 'package:bloc_testapp/cubit/counter_stateone.dart';
 import 'package:bloc_testapp/widget/button.dart';
 import 'package:bloc_testapp/widget/text.dart';
 import 'package:flutter/material.dart';
