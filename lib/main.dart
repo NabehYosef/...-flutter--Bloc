@@ -1,5 +1,6 @@
-import 'package:bloc_testapp/Pages/blocConsumer.dart';
+import 'package:bloc_testapp/Apps/NoteApp.dart';
 import 'package:bloc_testapp/cubit/counter_cubit.dart';
+import 'package:bloc_testapp/cubit/post_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -13,12 +14,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) =>
-          CounterCubit(),
+      create: (context) => PostCubit(),
       child: MaterialApp(
         debugShowCheckedModeBanner:
             false,
-        home: ExBlocConsumer(),
+
+        home: NoteApp(),
       ),
     );
   }
